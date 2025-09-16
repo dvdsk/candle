@@ -3,7 +3,8 @@ pub use prost;
 use prost::Message;
 
 pub mod onnx {
-    include!(concat!(env!("OUT_DIR"), "/onnx.rs"));
+    // include!(concat!(env!("OUT_DIR"), "/onnx.rs"));
+    include!("onnx.rs");
 }
 
 pub mod eval;
